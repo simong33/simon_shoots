@@ -4,9 +4,23 @@ title: Simon shoots
 
 <div id="home">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
+    <p style="text-decoration: underline;">ALBUMS</p>
     <p>
-      Simon shoots
+      <a href="">_istanbul</a>
+    </p>
+    <p>
+      <a href="">_shanghai</a>
+    </p>
+    <p>
+      <a href="">_paris</a>
     </p>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $(window).on("load", function() {
+       $(".home-content").animate({ "left": "-=500px" }, "slow" );
+    });
+  });
+</script>

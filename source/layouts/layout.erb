@@ -10,6 +10,7 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
   </head>
   <body>
     <div class="navbar-wagon">
@@ -21,19 +22,8 @@
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
-
-        <!-- Profile picture with dropdown list -->
-        <div class="navbar-wagon-item">
-          <div class="dropdown">
-            <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Log Out</a></li>
-            </ul>
-          </div>
-        </div>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Portfolio</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
       </div>
 
       <!-- Dropdown appearing on mobile only -->
@@ -41,9 +31,8 @@
         <div class="dropdown">
           <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li><a href="#">Host</a></li>
-            <li><a href="#">Trips</a></li>
-            <li><a href="#">Messagese</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -51,12 +40,9 @@
     <%= yield %>
     <div class="footer">
       <div class="footer-links">
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </div>
-      <div class="footer-copyright">
-        Simon GUILLORIT, <%= Time.now.strftime('%Y') %>
+        <a href="https://www.instagram.com/_simonist/"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/simong33"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/s_guillorit"><i class="fa fa-twitter"></i></a>
       </div>
     </div>
   </body>

@@ -1,7 +1,16 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  background:url('../images/home.jpg') no-repeat center center;
+  background-size: cover;
+}
+
 #home {
-  background-color: #D23333;
+  height: 80vh;
   color: white;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;

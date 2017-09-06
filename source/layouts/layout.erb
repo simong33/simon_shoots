@@ -8,6 +8,7 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
+    <link rel="stylesheet" href="https://unpkg.com/typer-js/typer.css">
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
@@ -15,14 +16,14 @@
   <body>
     <div class="navbar-wagon">
       <!-- Logo -->
-      <a href="/" class="navbar-wagon-brand">
-        SIMON SHOOTS
+      <a href="/" class="navbar-wagon-brand" id="typewriter">
       </a>
 
       <!-- Right Navigation -->
-      <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <div class="navbar-wagon-right hidden-xs">
 
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Portfolio</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Archives</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Worlwide</a>
         <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
       </div>
 
@@ -45,5 +46,14 @@
         <a href="https://twitter.com/s_guillorit" target="blank"><i class="fa fa-twitter"></i></a>
       </div>
     </div>
+    <script src="https://unpkg.com/typer-js"></script>
+    <script>
+      $(document).ready(function() {
+        typer('#typewriter', 90)
+          .line('hidden flies')
+          .back(4)
+          .continue('iles.');
+        });
+    </script>
   </body>
 </html>

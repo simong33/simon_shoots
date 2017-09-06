@@ -4,23 +4,23 @@ title: Simon shoots
 
 <div id="home">
   <div class="home-content">
-    <p style="text-decoration: underline;">ALBUMS</p>
+    <p>ALBUMS</p>
     <p>
-      <a href="">_istanbul</a>
+      <a href="" class="album">_istanbul</a>
     </p>
     <p>
-      <a href="">_shanghai</a>
+      <a href="" class="album">_shanghai</a>
     </p>
     <p>
-      <a href="">_paris</a>
+      <a href="" class="album">_paris</a>
     </p>
   </div>
 </div>
 
 <script>
   $(document).ready(function() {
-    $(window).on("load", function() {
-       $(".home-content").animate({ "left": "-=500px" }, "slow" );
+    $("p").each(function(index) {
+        $(this).delay(400*index).fadeIn(300);
     });
   });
 </script>

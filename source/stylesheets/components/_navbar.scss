@@ -11,17 +11,14 @@
 /* Logo */
 
 .navbar-wagon-brand {
-  text-decoration: none;
-}
-.navbar-wagon-brand img {
-  height: 50px;
-}
-
-/* User Avatar */
-.navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  font-weight: lighter;
+  transition: all 1s ease-out;
+  &:hover {
+    color: white;
+    opacity: .8;
+  }
 }
 
 /* Right section */
@@ -42,6 +39,8 @@
   color: white;
   font-weight: lighter;
   font-size: 18px;
+  transition: all .5s ease-out;
+
 }
 .navbar-wagon-link:hover {
   color: rgba(255, 255, 255, 0.8);

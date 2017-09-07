@@ -5,15 +5,9 @@ title: Simon shoots
 <div id="home">
   <div class="home-content">
     <h2>PLACES.</h2>
-    <p>
-      <a href="#" class="album">_istanbul</a>
-    </p>
-    <p>
-      <a href="#" class="album">_shanghai</a>
-    </p>
-    <p>
-      <a href="#" class="album">_paris</a>
-    </p>
+    <% data.simon_shoots.album.each do |id, album| %>
+      <p><a href="#">_<%= album.title.downcase %></a></p>
+    <% end %>
   </div>
 </div>
 

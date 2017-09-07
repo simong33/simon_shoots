@@ -20,3 +20,12 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+activate :contentful do |f|
+  f.access_token = ENV['CONTENTFUL_KEY']
+  f.space = { simon_shoots: 'wm5r3cdgovqi'}
+  f.rebuild_on_webhook = true
+  f.content_types = {
+  album: 'album'
+ }
+end

@@ -2,15 +2,10 @@ language: ruby
 cache: bundler
 script:
   - bundle exec middleman contentful
-after_success: |
-  if [ -n "$GITHUB_API_KEY" ]; then
-    cd "$TRAVIS_BUILD_DIR"
-    make web
-    cd web
-    git init
-    git checkout -b gh-pages
-    git add .
-    git -c user.name='travis' -c user.email='travis' commit -m init
-    git push -f -q https://<me>:$GITHUB_API_KEY@github.com/simong33/simon_shoots-gh-pages gh-pages &2>/dev/null
-    cd "$TRAVIS_BUILD_DIR"
-  fi
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  project_name: simon_shoots
+  on:
+    branch: master

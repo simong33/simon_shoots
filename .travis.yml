@@ -1,4 +1,4 @@
 language: ruby
 cache: bundler
 script:
-  - middleman contentful
+  - bundle exec middleman contentful

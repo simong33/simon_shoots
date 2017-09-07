@@ -19,6 +19,11 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
+  deploy.branch = 'gh-pages'
+
+  if ENV["TRAVIS_BUILD_NUMBER"] then
+    commit_message += " (Travis Build \##{ENV["TRAVIS_BUILD_NUMBER"]})"
+  end
 end
 
 activate :contentful do |f|

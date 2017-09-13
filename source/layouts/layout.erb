@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag "application" %>
+    <link rel="stylesheet" href="https://unpkg.com/typer-js/typer.css">
+    <%= javascript_include_tag "application" %>
+    <%= favicon_tag 'images/favicon.png' %>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar-wagon">
+      <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand" id="typewriter">
+      </a>
+
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-sm hidden-xs">
+
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Archives.</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Worldwide.</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Contact.</a>
+      </div>
+
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-wagon-item hidden-md hidden-lg">
+        <div class="dropdown">
+          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="#">Archives.</a></li>
+            <li><a href="#">Worldwide.</a></li>
+            <li><a href="#">Contact.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://www.instagram.com/_simonist/" target="blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/simong33" target="blank"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/s_guillorit" target="blank"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typer-js"></script>
+    <script>
+      $(document).ready(function() {
+        typer('#typewriter', 90)
+          .line('forgotten lies')
+          .back(4)
+          .continue('flies')
+          .back(4)
+          .continue('iles.');
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+current directory: /home/travis/build/simong33/simon_shoots/vendor/bundle/ruby/2.4.0/gems/fast_blank-1.0.0/ext/fast_blank
+/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20170907-3206-1kukpbe.rb extconf.rb
+creating Makefile
+
+current directory: /home/travis/build/simong33/simon_shoots/vendor/bundle/ruby/2.4.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" clean
+
+current directory: /home/travis/build/simong33/simon_shoots/vendor/bundle/ruby/2.4.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.so
+
+current directory: /home/travis/build/simong33/simon_shoots/vendor/bundle/ruby/2.4.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" install
+/usr/bin/install -m 0755 fast_blank.so ./.gem.20170907-3206-13v1jub

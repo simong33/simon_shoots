@@ -1,0 +1,11 @@
+language: ruby
+cache: bundler
+script:
+  - bundle exec middleman contentful
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  project_name: simon_shoots
+  on:
+    branch: master

@@ -1,0 +1,22 @@
+---
+title: Forgotten Files
+---
+
+<div id="home">
+  <div class="home-content">
+    <h2>PLACES.</h2>
+    <% data.simon_shoots.album.each do |id, album| %>
+      <p><a href="#">_<%= album.title.downcase %></a></p>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $( window ).load(function() {
+      $(".album").each(function(index) {
+          $(this).delay(500*index).fadeIn(600);
+      });
+    });
+  });
+</script>

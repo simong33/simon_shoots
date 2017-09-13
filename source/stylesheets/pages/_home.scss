@@ -1,0 +1,40 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('/images/home.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#home {
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  .album {
+    display: none;
+  }
+  p {
+    margin-top: 0.7em;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 1s ease-out;
+    &:hover {
+      margin-left: 20px;
+      opacity: .8;
+    }
+  }
+}
+
+.home-content {
+  padding-left: 50px;
+}

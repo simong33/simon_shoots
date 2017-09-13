@@ -25,15 +25,16 @@
 
 /* Right section */
 .navbar-wagon-right {
-  display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: auto;
 }
 
 /* Basic navbar item */
 .navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
+  text-align: right;
 }
 
 /* Navbar link */
